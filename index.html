@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuevosHubber</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenidos a HuevosHubber</h1>
+        <p>Distribuidora de Huevos Frescos de Calidad</p>
+        <h1>
+            <img src="img/favicon.png" style="width: 100px; height: auto;">
+
+        </h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section>
+        <div id="estado" class="estado">
+            Cargando horario...
+        </div>
+        <div id="horario" class="horario">
+    </section>
+    <section>
+        <div class="container">
+            <h1>Hoja de Cotización de Productos Básicos</h1>
+            <form id="formCotizacion">
+                <label for="producto">Producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>Seleccione un producto</option>
+                    <option value="huevosfrescos" data-precio="10000">huevosfrescos</option>
+                    <option value="huevosoganicos" data-precio="15.00">huevosorganicos</option>
+                    <option value="huevosgrandes" data-precio="20.00">huevosgrandes</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" required min="1">
+
+                <label for="precio">Precio Unitario:</label>
+                <input type="number" id="precio" required min="0.01" step="0.01" readonly>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+
+
+            <table id="tablaCotizacion">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <div>
+                <h3>Total: <span id="totalCotizacion">0</span> COP</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="inicio">
+        <div class="content-container">
+            <h2>Inicio</h2>
+            <img src="img/Gallina Con Huevos.jpg"
+                alt="Huevos Frescos De Calidad Garantizada, Del Campo Hasta Sus Mesas">
+            <p>Somos una empresa especializada en la distribución de huevos frescos y de calidad. Nuestro compromiso es
+                ofrecer el mejor producto al mejor precio, garantizando frescura y sabor para todos nuestros clientes.
+            </p>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="content-container">
+            <h2>Productos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="img/huevosfrescos.jpg" alt="Huevos Frescos">
+                    <h3>Huevos Frescos</h3>
+                    <p>Huevos frescos de gallinas criadas en libertad.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/huevosorganicos.jpg" alt="Huevos Orgánicos">
+                    <h3>Huevos Orgánicos</h3>
+                    <p>Huevos orgánicos de gallinas alimentadas con productos naturales.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/huevosgrandes.jpg" alt="Huevos Extra Grandes">
+                    <h3>Huevos Extra Grandes</h3>
+                    <p>Huevos de tamaño extra grande, perfectos para cualquier receta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="content-container">
+            <h2>Clientes</h2>
+            <p>Contamos con una amplia variedad de clientes satisfechos, desde pequeños comercios hasta grandes cadenas
+                de supermercados. Algunos de nuestros clientes incluyen:</p>
+            <ul>
+                <li>Supermercado El Ahorro</li>
+                <li>La Tiendita Orgánica</li>
+                <li>Restaurante Huevos & Más</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="content-container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna consulta o deseas realizar un pedido, no dudes en contactarnos. Estamos a tu disposición
+                para brindarte el mejor servicio.</p>
+            <form action="#" method="POST">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electronico:</label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br><br>
+
+                <input type="button" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <div id="estado" class="estado">
+        Cargando horario...
+    </div>
+    <div id="horario" class="horario">
+
+        <script src="Java/javahh.js"></script>
+
+        <footer>
+            <p></p>
+            <p>&copy; 2024 HuevosHubber. Todos los derechos reservados.</p>
+            <p>Autores: <strong>Freddy Arias, Jose Avendaño, Wilson Erazo, Danier Bayona</strong></p>
+        </footer>
+
+
+</html>
